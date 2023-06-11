@@ -1,0 +1,24 @@
+print('Collatz Conjecture Program')
+print('This program will take in a positive integer greater than 0 and perform the Collatz Conjecture algorithm until it reaches the 4 - 2 - 1 loop.')
+
+conjecture = True
+while conjecture:
+    user_input = (input('Enter an integer here: '))
+    if user_input.isdigit():
+        number_here = int(user_input)
+        print('Initial-> ' + str(number_here))
+        while number_here > 0:
+            if number_here == 1:
+                quit()
+            if number_here % 2 == 0:
+                number_here = number_here//2
+                print('n/2    -> ' + str(number_here))
+            elif number_here % 2 != 0:
+                number_here = ((3 * number_here) + 1)
+                print('3n + 1 -> ' + str(number_here))
+        conjecture = False 
+                
+    else:
+        print('Please enter an integer.')
+        continue
+    
