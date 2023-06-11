@@ -1,5 +1,5 @@
 print('Collatz Conjecture Program')
-print('This program will take in a positive integer greater than 0 and perform the Collatz Conjecture algorithm until it reaches the 4 - 2 - 1 loop.')
+print('This program will take in a positive integer greater than or equal to 0 and perform the Collatz Conjecture algorithm until it reaches the 4 - 2 - 1 loop.')
 
 conjecture = True
 while conjecture:
